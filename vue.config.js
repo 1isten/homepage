@@ -1,11 +1,6 @@
+const assetsVersion = new Date().getTime();
+
 module.exports = {
-  pwa: {
-    name: 'Sten Li',
-    themeColor: '#fafafa',
-    msTileColor: '#fafafa',
-    appleMobileWebAppCapable: 'yes',
-    appleMobileWebAppStatusBarStyle: 'black-translucent',
-  },
   pages: {
     'index': {
       entry: 'src/main.js',
@@ -21,5 +16,13 @@ module.exports = {
       title: 'Sten Li',
       chunks: ['chunk-vendors', 'chunk-common', 'index'],
     },
+  },
+  pwa: {
+    name: 'Sten Li',
+    themeColor: '#fafafa',
+    msTileColor: '#fafafa',
+    appleMobileWebAppCapable: 'yes',
+    appleMobileWebAppStatusBarStyle: 'black-translucent',
+    assetsVersion,
   },
 };
