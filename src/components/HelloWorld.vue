@@ -20,7 +20,7 @@
           My name is Sten Li, I'm a programmer.<br>
           <v-tooltip bottom disabled>
             <template v-slot:activator="{ on }">
-              <v-btn class="ma-1" small icon v-on="on" href="https://1isten.github.io/notes" target="_blank">
+              <v-btn class="ma-1" small icon v-on="on" href="https://1isten.github.io/notes" target="_self">
                 <v-icon>mdi-file-document-edit-outline</v-icon>
               </v-btn>
             </template>
