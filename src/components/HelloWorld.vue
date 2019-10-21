@@ -1,6 +1,6 @@
 <template>
   <v-container class="fill-height">
-    <v-layout text-center column wrap justify-center align-center>
+    <v-layout justify-center align-center column wrap>
       <v-flex shrink>
         <v-img
           :src="require('@/assets/280544@1563729391-circle.png')"
@@ -14,17 +14,17 @@
 
       <v-flex shrink>
         <h1 class="display-2 font-weight-bold mt-1 mb-2">
-          Hello World
+          {{ msg }}
         </h1>
         <p class="subheading font-weight-regular">
-          My name is Sten Li, I'm a programmer.<br>
+          {{ bio }}<br>
           <v-tooltip bottom disabled>
             <template v-slot:activator="{ on }">
               <v-btn class="ma-1" small icon v-on="on" href="https://1isten.github.io/notes" target="_self">
                 <v-icon>mdi-file-document-edit-outline</v-icon>
               </v-btn>
             </template>
-            <span>Notes</span>
+            <span>My notes</span>
           </v-tooltip>
           <v-tooltip bottom disabled>
             <template v-slot:activator="{ on }">
@@ -52,7 +52,8 @@
 export default {
   name: 'HelloWorld',
   data: () => ({
-    // ...
+    msg: 'Hello World',
+    bio: "My name is Sten Li, I'm a programmer.",
   }),
 };
 </script>
