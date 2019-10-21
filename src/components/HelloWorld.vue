@@ -16,8 +16,8 @@
         <h1 class="display-2 font-weight-bold mt-1 mb-2">
           {{ msg }}
         </h1>
+        <p class="mb-1">{{ bio }}</p>
         <p class="subheading font-weight-regular">
-          {{ bio }}<br>
           <v-tooltip bottom disabled>
             <template v-slot:activator="{ on }">
               <v-btn class="ma-1" small icon v-on="on" href="https://1isten.github.io/notes" target="_self">

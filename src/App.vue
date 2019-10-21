@@ -13,6 +13,10 @@ export default {
 </script>
 
 <style>
+:root {
+  --font-size: calc(0.8em + 0.4vh);
+}
+
 html,
 body {
   width: 100vw;
@@ -21,7 +25,7 @@ body {
   border: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: calc(0.75em + 0.25vh);
+  font-size: var(--font-size) !important;
 }
 
 *,
