@@ -16,7 +16,7 @@ export default new VueRouter({
     },
     {
       path: '*',
-      component: () => import(/* webpackChunkName: "fof" */ '../views/404.vue'),
+      component: () => import('../views/404.vue'),
     },
   ],
 });

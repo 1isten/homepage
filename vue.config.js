@@ -25,4 +25,7 @@ module.exports = {
     appleMobileWebAppStatusBarStyle: 'black-translucent',
     assetsVersion,
   },
+  transpileDependencies: [
+    'vuetify',
+  ],
 };
