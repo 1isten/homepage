@@ -14,7 +14,7 @@ export default {
 
 <style>
 :root {
-  --font-size: calc(0.8em + 0.4vh);
+  --font-size: calc(0.8em + 0.1vw + 0.1vh);
 }
 
 html,
