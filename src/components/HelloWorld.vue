@@ -21,7 +21,7 @@
           <v-tooltip bottom disabled>
             <template v-slot:activator="{ on }">
               <v-btn class="ma-1" small icon v-on="on" href="https://1isten.github.io/notes" target="_self">
-                <v-icon>mdi-file-document-edit-outline</v-icon>
+                <v-icon>{{ mdiFileDocumentEditOutline }}</v-icon>
               </v-btn>
             </template>
             <span>My notes</span>
@@ -29,7 +29,7 @@
           <v-tooltip bottom disabled>
             <template v-slot:activator="{ on }">
               <v-btn class="ma-1" small icon v-on="on" href="https://github.com/1isten" target="_blank">
-                <v-icon>mdi-github-circle</v-icon>
+                <v-icon>{{ mdiGithubCircle }}</v-icon>
               </v-btn>
             </template>
             <span>GitHub</span>
@@ -37,7 +37,7 @@
           <v-tooltip bottom disabled>
             <template v-slot:activator="{ on }">
               <v-btn class="ma-1" small icon v-on="on" href="https://twitter.com/1is10" target="_blank">
-                <v-icon>mdi-twitter</v-icon>
+                <v-icon>{{ mdiTwitter }}</v-icon>
               </v-btn>
             </template>
             <span>Twitter</span>
@@ -49,11 +49,17 @@
 </template>
 
 <script>
+import { mdiFileDocumentEditOutline, mdiGithubCircle, mdiTwitter } from '@mdi/js';
+
 export default {
   name: 'HelloWorld',
   data: () => ({
     msg: 'Hello World',
     bio: "My name is Sten Li, I'm a programmer.",
+
+    mdiFileDocumentEditOutline,
+    mdiGithubCircle,
+    mdiTwitter,
   }),
 };
 </script>

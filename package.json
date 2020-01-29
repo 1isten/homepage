@@ -9,7 +9,7 @@
     "deploy": "sh deploy.sh"
   },
   "dependencies": {
-    "@mdi/font": "^4.7.95",
+    "@mdi/js": "^4.8.95",
     "core-js": "^3.5.0",
     "register-service-worker": "^1.6.2",
     "roboto-fontface": "*",
