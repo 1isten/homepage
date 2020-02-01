@@ -17,6 +17,9 @@ export default new VueRouter({
     {
       path: '*',
       component: () => import('../views/404.vue'),
+      beforeEnter: (to, from, next) => {
+        return next({ name: 'home' });
+      },
     },
   ],
 });
