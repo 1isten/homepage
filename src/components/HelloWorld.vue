@@ -2,18 +2,17 @@
   <v-container class="fill-height">
     <v-layout justify-center align-center column wrap>
       <v-flex shrink class="mb-2">
-        <v-sheet
+        <div
           v-resize="onResize"
-          :width="delta"
-          :height="delta"
-          style="border-radius: 50%; overflow: hidden;"
+          :style="avatarContainerStyle"
         >
           <v-img
             :src="require('@/assets/280544@1563729391.png')"
             :lazy-src="require('@/assets/280544@1563729391-lazy.png')"
-            height="100%"
+            :height="'100%'"
+            :style="avatarStyle"
           ></v-img>
-        </v-sheet>
+        </div>
       </v-flex>
 
       <v-flex shrink>
@@ -68,6 +67,17 @@ export default {
     mdiTwitter,
   }),
   computed: {
+    avatarContainerStyle() {
+      return `
+        width: ${this.delta}px;
+        height: ${this.delta}px;
+        border-radius: 50%;
+        overflow: hidden;
+      `;
+    },
+    avatarStyle() {
+      return this.avatarContainerStyle;
+    },
     iconSize() {
       if (this.$vuetify.breakpoint.xsOnly) {
         return 20;
