@@ -1,13 +1,15 @@
 <template>
-  <v-container class="fill-height">
-    <v-layout justify-center align-center>
-      <h1 class="display-1 font-weight-black">
-        <router-link id="homepage" class="secondary--text text--lighten-4" :to="{ name: 'home' }" replace>
-          <span style="display: none;">homepage</span>
-        </router-link>
-      </h1>
-    </v-layout>
-  </v-container>
+  <v-layout justify-center align-center>
+    <h1 class="display-1 font-weight-black">
+      <router-link
+        id="homepage"
+        class="secondary--text text--lighten-5"
+        :to="{ name: 'home' }" replace
+      >
+        <span style="display: none;">homepage</span>
+      </router-link>
+    </h1>
+  </v-layout>
 </template>
 
 <style scoped>

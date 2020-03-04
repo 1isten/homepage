@@ -1,0 +1,71 @@
+<template>
+  <div>
+    <v-tooltip
+      v-for="(link, i) in links"
+      :key="i"
+      bottom
+      disabled
+    >
+      <template v-slot:activator="{ on }">
+        <v-btn
+          :href="link.href"
+          :target="link.target"
+          v-on="on"
+          small
+          icon
+          style="margin: 0 0.5ch;"
+        >
+          <v-icon :size="iconSize">
+            {{ link.icon }}
+          </v-icon>
+        </v-btn>
+      </template>
+      <span>{{ link.text }}</span>
+    </v-tooltip>
+  </div>
+</template>
+
+<script>
+import {
+  mdiFileDocumentEditOutline,
+  mdiGithubCircle,
+  mdiTwitter
+} from '@mdi/js';
+
+export default {
+  name: 'ExternalLinks',
+  data: () => ({
+    links: [
+      {
+        href: 'https://1isten.github.io/notes',
+        target: '_self',
+        icon: mdiFileDocumentEditOutline,
+        text: 'Notes',
+      },
+      {
+        href: 'https://1isten.github.io/notes',
+        target: '_blank',
+        icon: mdiGithubCircle,
+        text: 'GitHub',
+      },
+      {
+        href: 'https://1isten.github.io/notes',
+        target: '_blank',
+        icon: mdiTwitter,
+        text: 'Twitter',
+      },
+    ],
+  }),
+  computed: {
+    iconSize() {
+      if (this.$vuetify.breakpoint.xsOnly) {
+        return 20;
+      }
+      if (this.$vuetify.breakpoint.smOnly) {
+        return 22;
+      }
+      return 24;
+    },
+  },
+};
+</script>
