@@ -43,13 +43,13 @@ export default {
         text: 'Notes',
       },
       {
-        href: 'https://1isten.github.io/notes',
+        href: 'https://github.com/1isten',
         target: '_blank',
         icon: mdiGithubCircle,
         text: 'GitHub',
       },
       {
-        href: 'https://1isten.github.io/notes',
+        href: 'https://twitter.com/1is10',
         target: '_blank',
         icon: mdiTwitter,
         text: 'Twitter',
