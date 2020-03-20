@@ -1,5 +1,3 @@
-const assetsVersion = new Date().getTime();
-
 module.exports = {
   pages: {
     'index': {
@@ -23,7 +21,7 @@ module.exports = {
     msTileColor: '#fafafa',
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'black-translucent',
-    assetsVersion,
+    assetsVersion: Date.now(),
   },
   transpileDependencies: [
     'vuetify',
