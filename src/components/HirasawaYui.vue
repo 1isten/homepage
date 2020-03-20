@@ -1,14 +1,11 @@
 <template>
-  <div
-    v-resize="onResize"
-    :style="avatarContainerStyle"
-  >
+  <div v-resize="onResize" :style="avatarContainerStyle">
     <v-img
       :src="require('@/assets/280544@1563729391.png')"
       :lazy-src="require('@/assets/280544@1563729391-lazy.png')"
       :height="'100%'"
       :style="avatarStyle"
-    ></v-img>
+    />
   </div>
 </template>
 

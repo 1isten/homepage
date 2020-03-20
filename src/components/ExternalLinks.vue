@@ -1,19 +1,14 @@
 <template>
   <div>
-    <v-tooltip
-      v-for="(link, i) in links"
-      :key="i"
-      bottom
-      disabled
-    >
+    <v-tooltip v-for="(link, i) in links" :key="i" bottom disabled>
       <template v-slot:activator="{ on }">
         <v-btn
           :href="link.href"
           :target="link.target"
-          v-on="on"
-          small
+          :small="$vuetify.breakpoint.smAndDown"
           icon
           style="margin: 0 0.5ch;"
+          v-on="on"
         >
           <v-icon :size="iconSize">
             {{ link.icon }}
@@ -26,11 +21,7 @@
 </template>
 
 <script>
-import {
-  mdiFileDocumentEditOutline,
-  mdiGithubCircle,
-  mdiTwitter
-} from '@mdi/js';
+import { mdiFileDocumentEditOutline, mdiGithub, mdiTwitter } from '@mdi/js';
 
 export default {
   name: 'ExternalLinks',
@@ -45,7 +36,7 @@ export default {
       {
         href: 'https://github.com/1isten',
         target: '_blank',
-        icon: mdiGithubCircle,
+        icon: mdiGithub,
         text: 'GitHub',
       },
       {

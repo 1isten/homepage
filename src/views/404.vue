@@ -4,7 +4,8 @@
       <router-link
         id="homepage"
         class="secondary--text text--lighten-5"
-        :to="{ name: 'home' }" replace
+        :to="{ name: 'home' }"
+        replace
       >
         <span style="display: none;">homepage</span>
       </router-link>
