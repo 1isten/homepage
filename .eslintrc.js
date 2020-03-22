@@ -9,12 +9,16 @@ module.exports = {
     parser: 'babel-eslint',
   },
   extends: [
+    'prettier',
     'prettier/vue',
     'plugin:prettier/recommended',
     'plugin:vue/essential',
     'eslint:recommended',
   ],
-  plugins: ['prettier', 'vue'],
+  plugins: [
+    'prettier',
+    'vue',
+  ],
   rules: {
     'no-alert': 'off',
     'no-console': 'off',
