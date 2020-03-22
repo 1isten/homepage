@@ -6,8 +6,8 @@
           :href="link.href"
           :target="link.target"
           :small="$vuetify.breakpoint.smAndDown"
+          :style="`margin: 0 ${$vuetify.breakpoint.smAndDown ? 0.4 : 0.25}ch;`"
           icon
-          style="margin: 0 0.5ch;"
           v-on="on"
         >
           <v-icon :size="iconSize">
