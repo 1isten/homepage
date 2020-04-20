@@ -28,7 +28,13 @@
 }
 
 #homepage:hover {
-  color: #000000de !important;
+  color: rgb(117, 117, 117) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  #homepage:hover {
+    color: rgb(238, 238, 238) !important;
+  }
 }
 
 #homepage:hover::before {
