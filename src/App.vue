@@ -11,6 +11,33 @@
 <script>
 export default {
   name: 'App',
+  data: () => ({
+    prefersDark: undefined,
+    isDark: false,
+  }),
+  mounted() {
+    if (window.matchMedia) this.prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+    if (this.prefersDark) {
+      this.prefersDark.addListener(this.setColorScheme);
+      this.isDark = this.prefersDark.matches;
+    }
+  },
+  beforeDestroy() {
+    if (this.prefersDark) {
+      this.prefersDark.removeListener(this.setColorScheme);
+    }
+  },
+  methods: {
+    setColorScheme(e) {
+      this.isDark = e.matches;
+    },
+  },
+  watch: {
+    isDark(isDark) {
+      const themeColorMeta = document.querySelector('head > meta[name="theme-color"]');
+      themeColorMeta.setAttribute('content', isDark ? '#202024' : '#dee1e6');
+    },
+  },
 };
 </script>
 

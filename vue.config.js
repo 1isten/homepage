@@ -17,8 +17,8 @@ module.exports = {
   },
   pwa: {
     name: 'Sten Li',
-    themeColor: '#fafafa',
-    msTileColor: '#fafafa',
+    themeColor: '#ffffff',
+    msTileColor: '#000000',
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'black-translucent',
     assetsVersion: Date.now(),
