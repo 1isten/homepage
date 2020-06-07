@@ -21,7 +21,16 @@ module.exports = {
     msTileColor: '#000000',
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'black-translucent',
+
     assetsVersion: Date.now(),
+
+    // configure the workbox plugin
+    workboxPluginMode: 'GenerateSW', // (default), create a new service worker file for each rebuild
+    // https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-webpack-plugin.GenerateSW#GenerateSW
+    workboxOptions: {
+      skipWaiting: true,
+      clientsClaim: true,
+    },
   },
   transpileDependencies: ['vuetify'],
 };
