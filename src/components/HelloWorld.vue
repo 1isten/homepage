@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="display-2 font-weight-bold mt-3">
+    <h1 class="display-2 text-h3 font-weight-bold mt-3">
       {{ msg }}
     </h1>
     <p class="mt-1 mb-2">
