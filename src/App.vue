@@ -1,10 +1,10 @@
 <template>
   <v-app>
-    <v-content>
+    <v-main>
       <v-container class="fill-height">
         <router-view />
       </v-container>
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
@@ -79,6 +79,11 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.v-image__image--preload {
+  -webkit-filter: blur(4px) !important;
+  filter: blur(4px) !important;
 }
 
 .v-icon {

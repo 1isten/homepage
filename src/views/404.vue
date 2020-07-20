@@ -1,6 +1,6 @@
 <template>
   <v-layout justify-center align-center>
-    <h1 class="display-1 text-h4 font-weight-black">
+    <h1 class="text-h4 font-weight-black">
       <router-link
         id="homepage"
         class="secondary--text text--lighten-5"
