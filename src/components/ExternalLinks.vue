@@ -3,6 +3,7 @@
     <v-tooltip v-for="(link, i) in links" :key="i" bottom disabled>
       <template v-slot:activator="{ on }">
         <v-btn
+          class="link-btn"
           :href="link.href"
           :target="link.target"
           :small="$vuetify.breakpoint.smAndDown"
@@ -10,7 +11,7 @@
           icon
           v-on="on"
         >
-          <v-icon :size="iconSize">
+          <v-icon :class="`link-icon-${link.text}`" :size="iconSize">
             {{ link.icon }}
           </v-icon>
         </v-btn>
@@ -21,7 +22,7 @@
 </template>
 
 <script>
-import { mdiVuetify, mdiGithub, mdiTwitter } from '@mdi/js';
+import { mdiNuxt, mdiGithub, mdiTwitter } from '@mdi/js';
 
 export default {
   name: 'ExternalLinks',
@@ -30,7 +31,7 @@ export default {
       {
         href: 'https://1isten.github.io/roadmap/stack',
         target: '_self',
-        icon: mdiVuetify,
+        icon: mdiNuxt,
         text: 'Stack',
       },
       {
@@ -60,3 +61,31 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.link-icon-Stack,
+.link-icon-GitHub,
+.link-icon-Twitter {
+  transition: 0.3s;
+}
+
+.link-btn:hover .link-icon-Stack {
+  color: #108775 !important;
+}
+@media (prefers-color-scheme: dark) {
+  .link-btn:hover .link-icon-Stack {
+    color: #00c58e !important;
+  }
+}
+.link-btn:hover .link-icon-GitHub {
+  color: #000000 !important;
+}
+@media (prefers-color-scheme: dark) {
+  .link-btn:hover .link-icon-GitHub {
+    color: #ffffff !important;
+  }
+}
+.link-btn:hover .link-icon-Twitter {
+  color: #1d9bf0 !important;
+}
+</style>
