@@ -21,17 +21,17 @@
 </template>
 
 <script>
-import { mdiFileDocumentEditOutline, mdiGithub, mdiTwitter } from '@mdi/js';
+import { mdiVuetify, mdiGithub, mdiTwitter } from '@mdi/js';
 
 export default {
   name: 'ExternalLinks',
   data: () => ({
     links: [
       {
-        href: 'https://1isten.github.io/notes',
+        href: 'https://1isten.github.io/roadmap/stack',
         target: '_self',
-        icon: mdiFileDocumentEditOutline,
-        text: 'Notes',
+        icon: mdiVuetify,
+        text: 'Stack',
       },
       {
         href: 'https://github.com/1isten',

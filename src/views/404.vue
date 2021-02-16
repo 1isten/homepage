@@ -7,7 +7,7 @@
         :to="{ name: 'home' }"
         replace
       >
-        <span style="display: none;">homepage</span>
+        <span style="display: none">homepage</span>
       </router-link>
     </h1>
   </v-layout>

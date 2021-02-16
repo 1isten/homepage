@@ -1,7 +1,7 @@
 <template>
   <div v-resize="onResize" :style="avatarContainerStyle">
     <v-img
-      :src="require('@/assets/280544@1563729391.png')"
+      :src="require('@/assets/280544@1563729391.jpg')"
       :lazy-src="require('@/assets/280544@1563729391-lazy.png')"
       :height="'100%'"
       :style="avatarStyle"
