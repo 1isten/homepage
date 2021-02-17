@@ -78,12 +78,7 @@ export default {
   }
 }
 .link-btn:hover .link-icon-GitHub {
-  color: #000000 !important;
-}
-@media (prefers-color-scheme: dark) {
-  .link-btn:hover .link-icon-GitHub {
-    color: #ffffff !important;
-  }
+  color: #191717 !important;
 }
 .link-btn:hover .link-icon-Twitter {
   color: #1d9bf0 !important;

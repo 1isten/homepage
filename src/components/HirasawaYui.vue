@@ -22,7 +22,6 @@ export default {
         height: ${this.delta}px;
         border-radius: 50%;
         overflow: hidden;
-        transition: 0.7s;
       `;
     },
     avatarStyle() {
@@ -46,9 +45,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.avatar:hover {
-  /* filter: drop-shadow(0px 2px 8px rgb(0 0 0 / 33%)); */
-}
-</style>
