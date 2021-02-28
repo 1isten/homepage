@@ -41,7 +41,7 @@ export default {
         text: 'GitHub',
       },
       {
-        href: 'https://twitter.com/1is10',
+        href: 'https://twitter.com/STENbb1',
         target: '_blank',
         icon: mdiTwitter,
         text: 'Twitter',
