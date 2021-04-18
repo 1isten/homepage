@@ -29,7 +29,7 @@ export default {
   data: () => ({
     links: [
       {
-        href: 'https://1isten.github.io/roadmap/stack',
+        href: '/roadmap/stack',
         target: '_self',
         icon: mdiNuxt,
         text: 'Stack',
@@ -41,7 +41,7 @@ export default {
         text: 'GitHub',
       },
       {
-        href: 'https://twitter.com/STENbb1',
+        href: 'https://twitter.com/iH8safari',
         target: '_blank',
         icon: mdiTwitter,
         text: 'Twitter',
